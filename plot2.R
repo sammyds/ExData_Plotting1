@@ -34,7 +34,7 @@ windows.options (width = 480, height = 480)
 png (file = "plot2.png")
 plot (power_df$NewDateTime, 
       power_df$NewGlobal_active_power, 
-      xlab = "", ylab = "Global Active Power (kilowatts)", main = "", type="o", 
+      xlab = "", ylab = "Global Active Power (kilowatts)", main = "", type="l", 
       cex = .01, lwd = .01, cex.lab = .85)
 
 # Close the device
