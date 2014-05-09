@@ -42,15 +42,15 @@ png (file = "plot3.png")
 plot (power_df$NewDateTime, 
       power_df$NewSub_metering_1, 
       xlab = "", ylab = "Energy sub metering", 
-      main = "", type="o", cex = .01, lwd = .01, cex.lab = .85, col = "Black")
+      main = "", type="l", cex = .01, lwd = .01, cex.lab = .85, col = "Black")
 
 lines (power_df$NewDateTime, 
       power_df$NewSub_metering_2, 
-      type="o", cex = .01, lwd = .01, cex.lab = .85, col = "Red")
+      type="l", cex = .01, lwd = .01, cex.lab = .85, col = "Red")
 
 lines (power_df$NewDateTime, 
        power_df$NewSub_metering_3, 
-       type="o", cex = .01, lwd = .01, cex.lab = .85, col = "Blue")
+       type="l", cex = .01, lwd = .01, cex.lab = .85, col = "Blue")
 
 legend("topright", legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),
         lty = 1, cex = .8, col = c("Black", "Red", "Blue"))
